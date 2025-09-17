@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="src/output.css" rel="stylesheet" />
+    <title>Dark Mode To-do List</title>
+  </head>
+  <body
+    class="bg-black text-white flex justify-center items-center min-h-screen"
+  >
+    <div id="card" class="container bg-gray-900 rounded-2xl max-w-2xl p-8">
+      <h1 class="text-white font-bold text-2xl text-center">To-Do List</h1>
+      <div class="input-container mt-5 text-center">
+        <input
+          type="text"
+          class="bg-gray-700 rounded-sm px-5 py-3"
+          placeholder="Add a new task"
+          id="todo-input"
+        />
+        <button
+          id="add-task-btn"
+          class="bg-purple-400 text-white font-bold px-2 py-1 rounded-sm cursor-pointer"
+        >
+          Add Task
+        </button>
+      </div>
+      <ul id="todo-list"></ul>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
